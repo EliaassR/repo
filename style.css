@@ -1,0 +1,225 @@
+body{
+    background-image : url('./img/background.jpg');
+    }
+
+h1{
+    font-style: italic
+}    
+.center{
+    text-align:center
+}
+
+.textcolor{
+    color:aquamarine
+}
+a{
+    color:aquamarine
+}
+
+.leftmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image : url('./img/menubackground.png');
+    background-repeat: no-repeat;
+    padding: 1em;
+    width: 238px;
+    height: 239px;
+    border:solid;
+    border: thick double aquamarine;
+    margin: 1% 2%;
+}
+
+.lileftmenu {
+    margin: 30% 0;
+}
+#menuborde{
+    padding: 20px 80px 20px;
+}
+
+#top {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  #top td, #top th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #top tr{
+      background-color: #ddd;
+      padding-top: 12px;
+      padding-bottom: 12px;
+  }
+  
+  #top th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: aquamarine;
+    color: black;
+  }
+  .form{
+      background-color: black;
+      align-items: center;
+      padding: 2% 0;
+      width: 238px;
+      height: 200px;
+      margin-left: 820px;
+  }
+
+  ul {
+    list-style: none;
+    font-size:0 /* truco por el uso de inline-block*/
+ }
+ li {
+    display: inline-block;
+    width: 8%;
+    position:relative;
+    font-size: 14px
+ }
+ ul ul {
+    position: absolute;
+    display: none;
+ }
+ ul ul li {
+    display: block;
+ }
+ ul li:hover ul {
+    display:block;
+ }
+ 
+
+
+
+
+img {
+    max-width: 100%;
+  }
+  
+  .slider-container{
+    height: 100%;
+    width: 95%;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+  }
+  
+  .menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+  }
+  
+  [id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+  }
+  
+  .slide-1 {
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/587/550/452/firewatch-video-game-art-minimalism-simple-hd-wallpaper-preview.jpg");
+  }
+  .slide-2 {
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/645/355/633/video-games-video-game-art-digital-art-genshin-impact-mask-hd-wallpaper-preview.jpg");
+  }
+  .slide-3 {
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/864/806/346/minimalism-digital-art-simple-cat-wallpaper-preview.jpg");
+  }
+  
+
+@media screen and (min-width: 320px) {
+
+    
+
+    #grilla {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100px 200px 100px;
+        column-gap: 150px;
+        row-gap: 200px;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "contenido"
+        "footer";
+    }
+    
+    header {
+        grid-area: header;
+    }
+    
+    nav {
+       grid-area: nav;
+    }
+    
+    section {
+       grid-area: contenido;
+    }
+    
+    footer {
+       grid-area: footer;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #grilla {
+        display: grid;
+        grid-template-columns: 20% auto 15%;
+        grid-template-rows: 100px 400px 75px;
+        column-gap: 150px;
+        row-gap: 200px;
+        grid-template-areas: 
+        "header header header"
+        "nav contenido contenido"
+        "footer footer footer";
+    }
+    
+    header {
+        grid-area: header;
+    }
+    
+    nav {
+       grid-area: nav;
+    }
+    
+    section {
+       grid-area: contenido;
+    }
+    
+    footer {
+       grid-area: footer;
+    }
+
+}
