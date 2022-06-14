@@ -16,6 +16,10 @@ a{
     color:aquamarine
 }
 
+.alcentro {
+  align-content: flex-end;
+}
+
 .leftmenu {
     display: flex;
     flex-direction: column;
@@ -190,6 +194,10 @@ img {
        grid-area: footer;
     }
 
+    .espacio1 {
+      padding: 5%;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -221,5 +229,12 @@ img {
     footer {
        grid-area: footer;
     }
+    #burger {
+      display:none
+    }
+    .espacio1 {
+      padding: 0%;
+    }
 
-}
+    }
+

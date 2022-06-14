@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - GameServer Project</title>
     <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <div id="grilla"><header>
@@ -20,9 +21,53 @@
         </ul>
     </div>
 
-                 <div class="center textcolor"><h1>GameServer Project</h1>
-                <img src="../img/logo.png" alt="alternatetext"></div>
-            </header>
+    <div class="center textcolor espacio1">
+        <h1>GameServer Project</h1>
+   <img src="../img/logo.png" class="img-fluid" alt="alternatetext"></div>
+</header>
+
+<nav ID="burger" class="navbar bg-light fixed-top">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="#">Game Server Project</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+       <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="nav-link" href="../index.html">Inicio</a></h5>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="offcanvas-body">
+         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="./ranking.html">Ranking</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="./shop.html">Shop</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Jugar!
+             </a>
+             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+               <li><a class="dropdown-item" href="./register.html">Registrate</a></li>
+               <li><a class="dropdown-item" href="./descargas.html">Descargar</a></li>
+               <li>
+                 <hr class="dropdown-divider">
+               </li>
+               <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+             </ul>
+           </li>
+         </ul>
+         <form class="d-flex" role="search">
+           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-outline-success" type="submit">Search</button>
+         </form>
+       </div>
+     </div>
+   </div>
+ </nav>
+
             <nav> 
                     <div class="leftmenu">
                     <a href="../index.html">Inicio</a>
@@ -32,39 +77,35 @@
                 
             </nav>
 
-            <section class="center">
-                <article>
-    <form class="form textcolor" action="#" method="GET" enctype="multipart/form-data";>
-        <fielset>
-            <legend>Formulario de contacto</legend>
-    
-            <br>
-            <label for="nombre">Nombre:</label>
-            <br>
-            <input name="nombre" type="text" placeholder="Nombre">
-    
-            <br>
-            <label for="contraseña">E-mail:</label>
-            <br>
-            <input name="contraseña" type="text" placeholder="E-mail de contacto">
-            <br>
-    
-            <label for="Mensaje">Mensaje:</label>
-            <br>
-            <textarea></textarea>
-            <br>
-            <input name="Enviar" type="submit" value="Enviar">
-    
-        </fielset>
-    </form>
-                </article>
-            </section>
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1" class="textcolor">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1" class="textcolor">Departamento</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Soporte</option>
+                    <option>Facturación</option>
+                    <option>Seguridad</option>
+                  </select>
+                </div>
+              
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1" class="textcolor">Escriba su mensaje aquí</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <input name="Enviar" type="submit" value="Enviar">
+                </div>
+              </form>
+            
             <footer class="center">
                 <span class="textcolor">REDES:</span><br>
                     <a title="Instagram" href="http://www.instagram.com"><img src="../img/ig.png" alt="Instagram" /></a>
                     <a title="Facebook" href="http://www.facebook.com"><img src="../img/fb.png" alt="Facebook" /></a>
                 
-        </footer></div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
 
